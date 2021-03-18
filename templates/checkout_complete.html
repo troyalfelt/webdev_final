@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Checkout</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Wheels and Deals</h1>
+
+      <h2>For all your transportation needs</h2>
+      .
+    </header>
+    <div class="checkout_div">
+      <h1 class="title">Checkout</h1>
+      {% if contents|length < 1 %}
+      <h1 class="message">Your cart is currently empty.</h1>
+      <footer class="checkout"><a href="/">Return to Merchandise</a></footer>
+      {% else %}
+      <table>
+        <tr>
+          <th>Merchandise</th>
+          <th>Image</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+        {% for i in contents%}
+        <tr>
+          <td>{{ i.name }}</td>
+          <td><img src="{{ i.image }}" /></td>
+          <td>${{ i.price }}</td>
+          <td>{{ i.quantity }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+    <footer class="checkout">
+      <p>Transaction has been processed. You have been charged ${{ total }}</p>
+    </footer>
+
+    {% endif %}
+  </body>
+</html>

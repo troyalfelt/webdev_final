@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wheels and Deals</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <header>
+    <h1>Wheels and Deals</h1>
+
+    <h2>For all your transportation needs</h2>
+    .</header>
+
+    <h1 class="title">Choose from a wide seletion of transportation options</h1>
+    <hr />
+    <span class="superspan">
+      <div class="subdiv">
+        <img
+          src="../static/images/skateboard.jpg"
+          alt="A plain black skateboard."
+        />
+        <p>Skateboard</p>
+        <div class="add_cart">
+          <p>${{ skb_price }}</p>
+          <p>In cart: {{ skb_q }}</p>
+          <button type="button">
+            <a href="/add/Skateboard">Add to cart</a>
+          </button>
+        </field>
+      </div>
+    </div>
+
+      <div class="subdiv">
+        <img src="../static/images/bike.jpg" alt="A blue bike." />
+        <p>Bike</p>
+        <div class="add_cart">
+          <p>${{ bike_price }}</p>
+          <p>In cart: {{ bike_q }}</p>
+          <button type="button">
+            <a href="/add/Bike">Add to cart</a>
+          </button>
+        </div>
+      </div>
+
+      <div class="subdiv">
+        <img src="../static/images/skates.jpg" alt="A woman's roller skate." />
+        <p>Roller Skates</p>
+        <div class="add_cart">
+          <p>${{ skates_price }}</p>
+          <p>In cart: {{ skates_q }}</p>
+          <button type="button">
+            <a href="/add/Skates">Add to cart</a>
+          </button>
+        </div>
+      </div>
+
+      <div class="subdiv">
+        <img src="../static/images/unicycle.jpg" alt="A blue unicycle." />
+        <p>Unicycle</p>
+        <div class="add_cart">
+          <p>${{ uni_price }}</p>
+          <p>In cart: {{ uni_q }}</p>
+          <button type="button">
+            <a href="/add/Unicycle">Add to cart</a>
+          </button>
+        </div>
+      </div>
+
+
+      <div class="subdiv">
+        <img
+          src="../static/images/tike.jpg"
+          alt="A toy car for children to ride in."
+        />
+        <p>Tike Truck</p>
+        <div class="add_cart">
+          <p>${{ tike_price }}</p>
+          <p></p>
+          <p>In cart: {{ tike_q }}</p>
+          <button type="button">
+            <a href="/add/TikeTruck">Add to cart</a>
+          </button>
+        </div>
+      </div>
+
+      <div class="subdiv">
+        <img src="../static/images/segue.jpg" alt="A futuristic white segue." />
+        <p>Segue</p>
+        <div class="add_cart">
+          <p>${{ segue_price }}</p>
+          <p>In cart: {{ segue_q }}</p>
+          <button type="button">
+            <a href="/add/Segue">Add to cart</a>
+          </button>
+        </div>
+      </div>
+
+      <div class="subdiv">
+        <img src="../static/images/tank.jpg" alt="A military tank" />
+        <p>K-2 Black Panther Tank</p>
+        <div class="add_cart">
+          <p>${{ tank_price }}</p>
+          <p>In cart: {{ tank_q }}</p>
+          <button type="button">
+            <a href="/add/Tank">Add to cart</a>
+          </button>
+        </div>
+      </div>
+
+      <div class="subdiv">
+        <img
+          src="../static/images/scooter.jpg"
+          alt="A scooter with blue handlles."
+        />
+        <p>Scooter</p>
+        <div class="add_cart">
+          <p>${{ scooter_price }}</p>
+          <p>In cart: {{ scooter_q }}</p>
+          <button type="button">
+            <a href="/add/Scooter">Add to cart</a>
+          </button>
+        </div>
+      </div>
+    </span>
+    <hr/>
+    <footer class="checkout">
+    <button type="button">
+      <a href="/checkout">Next</a>
+    </button>
+  </footer>
+  </body>
+</html>

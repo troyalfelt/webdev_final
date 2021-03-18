@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+img {
+  width: 200px;
+  height: 250px;
+  border-style: solid;
+  border-color: grey;
+  padding: 5px;
+  margin: 5px;
+}
+a {
+  font-size: 2.2em;
+}
+.small_link {
+  font-size: 1.5em;
+}
+.mesage {
+  color: red;
+  text-align: center;
+}
+.title {
+  color: darkseagreen;
+}
+.superspan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.subdiv {
+  height: 450px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 15px 30px 15px;
+  align-items: center;
+  border-style: solid;
+  border-color: black;
+}
+
+.add_cart {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 35%;
+  justify-content: space-between;
+}
+
+h1 {
+  color: orange;
+  margin-bottom: 15px;
+  text-align: center;
+}
+h2 {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: plum;
+}
+h3 {
+  text-align: center;
+  color: teal;
+}
+hr {
+  color: #eeeeee;
+}
+p {
+  margin-top: 10px;
+  color: gray;
+  text-align: center;
+}
+.checkout {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightcyan;
+  border-top-style: solid;
+  border-top-color: pink;
+}
+.checkout_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 300px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: mistyrose;
+  border-bottom-style: solid;
+  border-color: peachpuff;
+  margin-bottom: 10px;
+}
+button {
+  width: 150px;
+}
+table {
+  width: 100%;
+  border-style: solid;
+  border-color: black;
+}
+tr {
+  display: flex;
+  justify-content: flex-start;
+  border-style: solid;
+  border-color: black;
+}
+th {
+  display: flex;
+  justify-content: center;
+  border-style: solid;
+  border-color: black;
+  width: 200px;
+}
+td {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-color: black;
+  width: 200px;
+}
+#image_cell {
+  width: 250px;
+  height: 300px;
+}
+#image_head {
+  width: 250px;
+}
+
+@media only screen and (min-width: 600px) {
+  .superspan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-color: pink;
+    width: 100%;
+  }
+}
